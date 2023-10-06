@@ -90,24 +90,6 @@ section + section {
     margin-top: 30px;
 }
 
-/* CSS for the 60/40 vertical split */
-.split-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left-column {
-    flex: 1;
-    width: 60%;
-    padding: 20px;
-}
-
-.right-column {
-    flex: 1;
-    width: 40%;
-    padding: 20px;
-}
-
 footer {
     text-align: center;
     padding: 10px;
