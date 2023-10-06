@@ -25,11 +25,13 @@ header h1 {
 nav ul {
     list-style-type: none;
     text-align: center;
+    padding-top: 5px;
 }
 
 nav li {
     display: inline;
     margin-right: 20px;
+    padding: 5px;
 }
 
 nav a {
@@ -44,7 +46,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -57,8 +59,53 @@ h2 {
     margin-bottom: 10px;
 }
 
-.project {
+/* Style for sections */
+section {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Style for section headings */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for section content */
+section p {
+    font-size: 16px;
+    line-height: 1.5; /* Improve readability with line spacing */
+    margin-bottom: 10px;
+}
+
+/* Style for strong text (e.g., course names, job titles) */
+section strong {
+    font-weight: bold;
+}
+
+/* Add some spacing between sections */
+section + section {
+    margin-top: 30px;
+}
+
+/* CSS for the 60/40 vertical split */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    width: 60%;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    width: 40%;
+    padding: 20px;
 }
 
 footer {
