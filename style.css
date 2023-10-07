@@ -165,7 +165,7 @@ footer {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     nav ul {
-        text-align: left;
+        text-align: center;
     }
     nav li {
         display: block;
