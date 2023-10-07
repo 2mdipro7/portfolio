@@ -140,7 +140,13 @@ section + section {
     margin-right: 0;
 }
 
-
+.projects {
+    background-color: #f9f9f9; /* Subtle background color for projects */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
 /* CSS for Links within <p> tags in the "Projects" section */
 .projects p a {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -153,6 +159,11 @@ section + section {
 
 .projects p a:hover {
     color: #0056b3 !important; /* Change link color on hover (adjust as needed) */
+}
+
+.topics {
+    font-size: smaller;
+    font-weight: bold;
 }
 
 footer {
