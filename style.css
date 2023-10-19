@@ -161,6 +161,11 @@ section + section {
     flex: 1;
     width: 48%; /* Set to less than 50% to accommodate for spacing */
     margin-right: 2%; /* Add spacing between columns */
+    background-color: #f9f9f9; /* Subtle background color for projects */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
 }
 
 /* Clear the margin on the last column to prevent horizontal scroll */
