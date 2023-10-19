@@ -168,6 +168,10 @@ section + section {
     margin-bottom: 20px;
 }
 
+.column p {
+    font-size: smaller;
+}
+
 /* Clear the margin on the last column to prevent horizontal scroll */
 .column:last-child {
     margin-right: 0;
