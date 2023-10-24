@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehrab Mashrafi's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mehrab Mashrafi</h1>
+            <p>User Researcher | Data Scientist</p>
+            <p>Currently at GMT +6 Time Zone</p>
+            <div class="contact-icons">
+                <a href="https://github.com/2mdipro7" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/2mdipro7" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/dipro7mufc" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:mm4mashrafi@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/+8801794384135" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://calendly.com/2mdipro7" target="_blank">Meet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="../index.html"  style="color: #333; margin-left: 20px;"><i class="fas fa-arrow-left fa-2x"></i></a>
+
+        <section class="project-details">
+            <h2>Real Estate Market Analysis of UAE</h2>
+            <p class="topics">
+                Topics Covered: <span>Data Scraping</span><span>Data Preprocessing</span><span>Data Cleaning</span><span>Data Segmentation</span><span>GIS</span><span>Tableau</span><span>Market Analysis</span><span>Data Analysis</span>
+            </p>
+            <p>
+                This was a comprehensive data analysis project that involved various stages. We initiated by scraping data from the web, specifically from PropertyFinder.ae. After gathering the data, we meticulously cleaned and organized it using Python. Additionally, we conducted segmentation to enhance our analysis by categorizing the data in various ways. To further enrich our insights, we incorporated GIS (Geographic Information System) data for more in-depth analysis. Finally, we wrapped up the project by creating interactive dashboards to visualize our findings, making the data easily accessible and comprehensible for presentation purposes.
+            </p>
+        </section>
+
+        <section class="project-video">
+            <h3>Project Presentation Video</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vqzdI8A64Sc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="project-links">
+            <h3>Project Links</h3>
+            <ul>
+                <li>
+                    <strong>Github:</strong> <a href="https://github.com/2mdipro7/Real-Estate-Market-Analysis-UAE" target="_blank">See Here</a>
+                </li>
+                <li>
+                    <strong>Property Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/PropertyInsights?publish=yes" target="_blank">View Dashboard</a>
+                </li>
+                <li>
+                    <strong>Agent Performance Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/AgentPerformance?publish=yes" target="_blank">View Dashboard</a>
+                </li>
+                <li>
+                    <strong>Project Presentation Video:</strong> <a href="https://youtu.be/vqzdI8A64Sc" target="_blank">Watch the Video</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Scraping</h2>
+            <p>
+                Step-by-step description of the key tasks and accomplishments are as follows:
+            </p>
+            <ul>
+                <li>Developed a web scraping script to extract property data from PropertyFinder.ae.</li>
+                <li>Gathered property details such as property type, price, area, bedrooms, bathrooms, and location.</li>
+            </ul>
+            <!-- Challenges and Solutions Subsection -->
+            
+                <h3>Challenges and Solutions</h3>
+                <h4>Challenges:</h4>
+                <ul>
+                    <li>The data scraping process was met with several challenges, requiring extensive trial and error to overcome.</li>
+                    <li>Not all the records were returning the same number of indexes, leading to the compromise of entire record rows.</li>
+                    <li>The information in the primary page we were scraping did not have extensive amount of information that we desired.</li>
+                </ul>
+                <h4>Solutions:</h4>
+                <p>
+                    To address the challenges, we developed a tailored algorithm that allowed us to handle the data irregularities effectively. We conducted numerous iterations and testing to ensure that the maximum number of rows could be scraped during the process.
+                </p>
+                <p>
+                    Additionally, we incorporated a new tab-opening and tab-closing system within the same script. This innovation enabled us to access information on property pages, facilitating the extraction of property and agent details.
+                </p>
+
+        </section>
+        <section>
+            <h2>Data Cleaning and Segmentation</h2>
+            <p>
+                Step-by-step description of the key tasks and accomplishments are as follows:
+            </p>
+            <ul>
+                <li>Imported the scraped data into Python and loaded it into a pandas DataFrame.</li>
+                <li>Conducted data cleaning, which included handling missing values, removing duplicates, and formatting columns.</li>
+                <li>Performed data transformations and created derived columns to enhance the analysis.</li>
+            </ul>
+            <h3>Challenges</h3>
+            <ul>
+                <li>There were a minimal number of missing values due to the algorithm we created.</li>
+                <li>There was no clear structure of the dataset, so understanding the data initially was challenging.</li>
+            </ul>
+
+            <h3>Solutions</h3>
+            <p>We created a blueprint of how we needed to structure the data, and we decided to convert the dataset into a third normal form. This way, each table would only contain a single element with a primary key. We identified these unique elements in the dataset:</p>
+            <ul>
+                <li>Properties</li>
+                <li>Agents</li>
+                <li>Companies</li>
+                <li>Languages</li>
+                <li>Amenities</li>
+            </ul>
+
+        </section>
+           
+    </main>
+</body>
