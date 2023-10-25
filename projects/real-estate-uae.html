@@ -111,23 +111,45 @@
             <h3>Solutions</h3>
             <p>We created a blueprint of how we needed to structure the data, and we decided to convert the dataset into a third normal form. This way, each table would only contain a single element with a primary key. We identified these unique elements in the dataset:</p>
             <ul>
+                <b>
                 <li>Properties</li>
                 <li>Agents</li>
                 <li>Companies</li>
                 <li>Languages</li>
                 <li>Amenities</li>
+                </b>
             </ul>
+
+            <h3>Data Normalization Process</h3>
+            <p>We organized the raw data into the five unique entities that constitute the core of our dataset. This involved identifying and separating these fundamental elements.</p>
+            <p>Further, we examined the relationships and affiliations of other data with these core entities, aiming to establish clear and structured connections.</p>
+            <p>The outcome of this process was the normalization of a single, complex table into seven distinct tables. Five of these tables represent the original entities, and the remaining two are relational tables that capture the relationships between the core elements.</p>
+
+            <h3>Ensuring Data Integrity</h3>
+            <p>With the dataset's structure clarified, we focused on ensuring data integrity and establishing unique primary keys for each table. We systematically examined each table and looked for columns that could serve as primary keys. If none were found, we sought candidate keys to guarantee uniqueness for each row.</p>
+            <p>To facilitate this process, we utilized Python's UID (Unique Identifier) library. This enabled us to generate unique primary keys, ensuring data consistency and referential integrity within the database.</p>
+            <p>By having unique primary keys in place for each table, we gained the flexibility and agility required to advance to subsequent stages of our analysis.</p>
+
+            <h3>GIS Data Incorporation</h3>
+            <p>Initially, our dataset lacked clear latitude and longitude data for each property. However, we possessed detailed street addresses for each property listing. To leverage this information, we harnessed the power of Google Maps' API for automated geocoding.</p>
+            <p>Through this process, we were able to automatically generate latitude and longitude data for every property listing in our dataset. This transformation opened up a new dimension of analysis that was previously unavailable to us, enabling more comprehensive geographical insights and visualization.</p>
+
+            <h3>Data Segmentation</h3>
+            <p>Following the initial data collection and cleansing phases, we moved on to data segmentation, a crucial step in organizing and categorizing our dataset. Our segmentation strategy revolved around key attributes to enhance analysis:</p>
+            <ul>
+                <li><strong>Price:</strong> We categorized properties based on their price ranges, allowing for targeted insights into the affordability and value of real estate offerings.</li>
+                <li><strong>Area Size:</strong> Properties were segmented by their area sizes, helping us understand the distribution of property sizes across different locations.</li>
+                <li><strong>Location:</strong> With the newly acquired geographical data through GIS incorporation, we grouped properties based on their precise locations. This added a spatial dimension to our analysis, making it easier to identify regional trends and patterns.</li>
+                <li><strong>Posting Date:</strong> We also segmented properties by their posting date, facilitating a temporal analysis to spot trends and changes over time.</li>
+            </ul>
+            <p>By applying these segmentation criteria, we gained a deeper understanding of our dataset, which facilitated more targeted analysis and visualization.</p>
 
         </section>
 
         <section class="erd-diagram">
-            <h3>Entity-Relationship Diagram (ERD)</h3>
+            <h2>Entity-Relationship Diagram (ERD)</h2>
             <img src="../resources/images/ERD.svg" alt="ERD Diagram" style="width: 100%;">
 
-            <h4>Data Normalization Process</h4>
-            <p>We organized the raw data into the five unique entities that constitute the core of our dataset. This involved identifying and separating these fundamental elements.</p>
-            <p>Further, we examined the relationships and affiliations of other data with these core entities, aiming to establish clear and structured connections.</p>
-            <p>The outcome of this process was the normalization of a single, complex table into seven distinct tables. Five of these tables represent the original entities, and the remaining two are relational tables that capture the relationships between the core elements.</p>
         </section>
         
            
