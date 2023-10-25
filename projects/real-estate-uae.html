@@ -49,7 +49,7 @@
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vqzdI8A64Sc" frameborder="0" allowfullscreen></iframe>
             </div>
-            <section class="project-links">
+            <section class="project-links" style="border-bottom: none;">
                 <h3>Project Links</h3>
                 <ul>
                     <li>
@@ -76,14 +76,13 @@
             </ul>
             <!-- Challenges and Solutions Subsection -->
             
-                <h3>Challenges and Solutions</h3>
-                <h4>Challenges</h4>
+                <h3>Challenges</h3>
                 <ul>
                     <li>The data scraping process was met with several challenges, requiring extensive trial and error to overcome.</li>
                     <li>Not all the records were returning the same number of indexes, leading to the compromise of entire record rows.</li>
                     <li>The information in the primary page we were scraping did not have extensive amount of information that we desired.</li>
                 </ul>
-                <h4>Solutions</h4>
+                <h3>Solutions</h3>
                 <p>
                     To address the challenges, we developed a tailored algorithm that allowed us to handle the data irregularities effectively. We conducted numerous iterations and testing to ensure that the maximum number of rows could be scraped during the process.
                 </p>
@@ -120,21 +119,21 @@
                 </b>
             </ul>
 
-            <h3>Data Normalization Process</h3>
+            <h3>1. Data Normalization Process</h3>
             <p>We organized the raw data into the five unique entities that constitute the core of our dataset. This involved identifying and separating these fundamental elements.</p>
             <p>Further, we examined the relationships and affiliations of other data with these core entities, aiming to establish clear and structured connections.</p>
             <p>The outcome of this process was the normalization of a single, complex table into seven distinct tables. Five of these tables represent the original entities, and the remaining two are relational tables that capture the relationships between the core elements.</p>
 
-            <h3>Ensuring Data Integrity</h3>
+            <h3>2. Ensuring Data Integrity</h3>
             <p>With the dataset's structure clarified, we focused on ensuring data integrity and establishing unique primary keys for each table. We systematically examined each table and looked for columns that could serve as primary keys. If none were found, we sought candidate keys to guarantee uniqueness for each row.</p>
             <p>To facilitate this process, we utilized Python's UID (Unique Identifier) library. This enabled us to generate unique primary keys, ensuring data consistency and referential integrity within the database.</p>
             <p>By having unique primary keys in place for each table, we gained the flexibility and agility required to advance to subsequent stages of our analysis.</p>
 
-            <h3>GIS Data Incorporation</h3>
+            <h3>3. GIS Data Incorporation</h3>
             <p>Initially, our dataset lacked clear latitude and longitude data for each property. However, we possessed detailed street addresses for each property listing. To leverage this information, we harnessed the power of Google Maps' API for automated geocoding.</p>
             <p>Through this process, we were able to automatically generate latitude and longitude data for every property listing in our dataset. This transformation opened up a new dimension of analysis that was previously unavailable to us, enabling more comprehensive geographical insights and visualization.</p>
 
-            <h3>Data Segmentation</h3>
+            <h3>4. Data Segmentation</h3>
             <p>Following the initial data collection and cleansing phases, we moved on to data segmentation, a crucial step in organizing and categorizing our dataset. Our segmentation strategy revolved around key attributes to enhance analysis:</p>
             <ul>
                 <li><strong>Price:</strong> We categorized properties based on their price ranges, allowing for targeted insights into the affordability and value of real estate offerings.</li>
@@ -148,9 +147,30 @@
 
         <section class="erd-diagram">
             <h2>Entity-Relationship Diagram (ERD)</h2>
+            <figure>
             <img src="../resources/images/ERD.svg" alt="ERD Diagram" style="width: 100%;">
-
+            <figcaption style="text-align: center;">Prepared ERD Model for our dataset</figcaption>
+            </figure>
+            <h3>Why we did this?</h3>
+            <ul>
+                <li><b>Data Structure Clarity:</b> The ERD visually clarified the dataset structure, making it easier to work with.</li>
+                <li><b>Data Normalization:</b> It enabled data normalization, reducing redundancy and ensuring efficiency.</li>
+                <li><b>Data Integrity:</b> The ERD enforced referential integrity, ensuring data consistency and reliability.</li>
+                <li><b>Database Design:</b> It served as the basis for designing a relational database, essential for our analysis.</li>
+                <li><b>Data Analysis Clarity:</b> The ERD enhanced the clarity of data analysis by identifying key entities and their relationships, enabling better insights and decision-making.</li>
+            </ul>
         </section>
+
+        <section class="interesting-findings">
+            <h2>Interesting Findings:</h2>
+            <ul>
+                <li>There is a general trend toward the availability of expensive properties. We observed a compelling trend indicating a higher abundance of expensive properties. As property values decrease, their availability also declines.</li>
+                <li>Apartments are the predominant property type, followed by villa and townhouse.</li>
+                <li>Jumeirah Village Circle, Downtown Dubai, and Dubai Marina are the best places for finding a property within the lowest price range.</li>
+            </ul>
+            <p>Please be advised that the dashboards are interactive and there are a many ways insights can be achieved besides these points mentioned above.</p>
+        </section>
+        
         
            
     </main>
