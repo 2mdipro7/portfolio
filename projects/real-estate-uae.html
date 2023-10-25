@@ -49,24 +49,20 @@
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vqzdI8A64Sc" frameborder="0" allowfullscreen></iframe>
             </div>
-        </section>
-
-        <section class="project-links">
-            <h3>Project Links</h3>
-            <ul>
-                <li>
-                    <strong>Github:</strong> <a href="https://github.com/2mdipro7/Real-Estate-Market-Analysis-UAE" target="_blank">See Here</a>
-                </li>
-                <li>
-                    <strong>Property Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/PropertyInsights?publish=yes" target="_blank">View Dashboard</a>
-                </li>
-                <li>
-                    <strong>Agent Performance Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/AgentPerformance?publish=yes" target="_blank">View Dashboard</a>
-                </li>
-                <li>
-                    <strong>Project Presentation Video:</strong> <a href="https://youtu.be/vqzdI8A64Sc" target="_blank">Watch the Video</a>
-                </li>
-            </ul>
+            <section class="project-links">
+                <h3>Project Links</h3>
+                <ul>
+                    <li>
+                        <strong>Github:</strong> <a href="https://github.com/2mdipro7/Real-Estate-Market-Analysis-UAE" target="_blank">See Here</a>
+                    </li>
+                    <li>
+                        <strong>Property Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/PropertyInsights?publish=yes" target="_blank">View Dashboard</a>
+                    </li>
+                    <li>
+                        <strong>Agent Performance Dashboard:</strong> <a href="https://public.tableau.com/app/profile/mehrab.mashrafi/viz/RealEstateMarketAnalysisofUAE/AgentPerformance?publish=yes" target="_blank">View Dashboard</a>
+                    </li>
+                </ul>
+            </section>
         </section>
 
         <section>
@@ -81,13 +77,13 @@
             <!-- Challenges and Solutions Subsection -->
             
                 <h3>Challenges and Solutions</h3>
-                <h4>Challenges:</h4>
+                <h4>Challenges</h4>
                 <ul>
                     <li>The data scraping process was met with several challenges, requiring extensive trial and error to overcome.</li>
                     <li>Not all the records were returning the same number of indexes, leading to the compromise of entire record rows.</li>
                     <li>The information in the primary page we were scraping did not have extensive amount of information that we desired.</li>
                 </ul>
-                <h4>Solutions:</h4>
+                <h4>Solutions</h4>
                 <p>
                     To address the challenges, we developed a tailored algorithm that allowed us to handle the data irregularities effectively. We conducted numerous iterations and testing to ensure that the maximum number of rows could be scraped during the process.
                 </p>
@@ -97,7 +93,7 @@
 
         </section>
         <section>
-            <h2>Data Cleaning and Segmentation</h2>
+            <h2>Data Preprocessing</h2>
             <p>
                 Step-by-step description of the key tasks and accomplishments are as follows:
             </p>
@@ -123,6 +119,17 @@
             </ul>
 
         </section>
+
+        <section class="erd-diagram">
+            <h3>Entity-Relationship Diagram (ERD)</h3>
+            <img src="../resources/images/ERD.svg" alt="ERD Diagram" style="width: 100%;">
+
+            <h4>Data Normalization Process</h4>
+            <p>We organized the raw data into the five unique entities that constitute the core of our dataset. This involved identifying and separating these fundamental elements.</p>
+            <p>Further, we examined the relationships and affiliations of other data with these core entities, aiming to establish clear and structured connections.</p>
+            <p>The outcome of this process was the normalization of a single, complex table into seven distinct tables. Five of these tables represent the original entities, and the remaining two are relational tables that capture the relationships between the core elements.</p>
+        </section>
+        
            
     </main>
 </body>
