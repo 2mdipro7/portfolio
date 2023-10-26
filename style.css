@@ -291,7 +291,28 @@ section ul li a:hover {
     border-radius: 8px; /* Match the border radius of the container */
 }
 
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.github { background-color: #333; }
+.github:hover { background-color: #555; }
+.tableau { background-color: #E97627; }
+.tableau:hover { background-color: #EB8A45; }
+.icon {
+    margin-right: 10px;
+}
 
+/*Footer */
 footer {
     text-align: center;
     padding: 10px;
