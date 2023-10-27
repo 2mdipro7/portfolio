@@ -303,13 +303,44 @@ section ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-size: smaller;
 }
 .github { background-color: #333; }
 .github:hover { background-color: #555; }
+.huggingface { background-color: #0061f2; }
+.huggingface:hover { background-color: #0073f7; }
+.streamlit { background-color: #ff4b4b; }
+.streamlit:hover { background-color: #ff6666; }
+.youtube { background-color: #FF0000; }
+.youtube:hover { background-color: #ff3333; }
 .tableau { background-color: #E97627; }
 .tableau:hover { background-color: #EB8A45; }
+.webapp {
+    background-color: #4CAF50; /* Example color */
+}
+.webapp:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+.unavailable {
+    background-color: #A9A9A9;
+}
+.unavailable:hover {
+    background-color: #808080;
+}
+.proposal {
+    background-color: #cce5f2;
+}
+.proposal:hover {
+    background-color: #9bc3d8;
+}
+
+        
 .icon {
     margin-right: 10px;
+}
+.text {
+    margin-top: 5px;
 }
 
 /*Footer */
