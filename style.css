@@ -10,7 +10,7 @@ body {
     text-align: justify;
     background-color: #f5f5f5;
     color: #333;
-    background-image: url('resources/images/benner_12.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image file */
+    /*background-image: url('resources/images/benner_12.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image file */
     background-repeat: repeat; /* You can change this to 'repeat-x' or 'repeat-y' for different patterns */
     background-size: auto; /* Adjust the size as needed */
 }
@@ -265,7 +265,7 @@ section ul li a {
 
 /* Hover effect for links within list items */
 section ul li a:hover {
-    color: #0056b3; /* Change link color on hover (adjust as needed) */
+    color: #ffffff; /* Change link color on hover (adjust as needed) */
 }
 
 /* CSS for the video container */
@@ -299,7 +299,7 @@ section ul li a:hover {
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
