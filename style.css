@@ -380,4 +380,12 @@ footer {
     body {
         text-align: left;
     }
+    .logo {
+        display: none;/
+    }
+
+    /* Adjust the starting position of the text */
+    .header-text {
+        margin-top: 70px; /* space equivalent to the height of the logo + some extra spacing */
+    }
 }
