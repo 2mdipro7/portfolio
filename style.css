@@ -352,6 +352,15 @@ section ul li a:hover {
     background-color: #9bc3d8;
 }
 
+/* Colab Button Styles */
+.colab {
+    background-color: #f9ab00; /* Orange color for Colab */
+}
+
+.colab:hover {
+    background-color: #e0a00e; /* Darker orange for hover effect */
+}
+
         
 .icon {
     margin-right: 10px;
@@ -389,3 +398,29 @@ footer {
         margin-top: 70px; /* space equivalent to the height of the logo + some extra spacing */
     }
 }
+
+
+
+/* tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* Add your own color scheme and styling */
