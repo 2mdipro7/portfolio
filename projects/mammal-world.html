@@ -87,7 +87,7 @@
         </section>
 
         <!-- Data Collection Section -->
-        <section class="projects">
+        <section>
             <h2>Data Collection</h2>
             <article id="data-sources">
                 <h3>Data Sources</h3>
@@ -97,6 +97,13 @@
                 
                 <p>In the final stride of our data collection journey, we amassed an extensive gallery of imagery, showcasing 103 mammal species that are native to the Indian subcontinent. This rich visual dataset was curated using advanced web scraping techniques, employing the Google Search Engine API for broad queries and the 'search_images_ddg()' function from Fastai for more focused image retrieval. The resulting compilation of images not only represents the splendor of the region's mammalian diversity but also forms the visual backbone of our AI-driven identification model.</p>
             </article>
+            <ul style="list-style: none; margin-left: -40px;">
+                <li>
+                <a class="button colab" href="https://colab.research.google.com/drive/1MB6SqMxQL-d7uKEQTw1Bzv22m-Mi1ir7?usp=sharing" target="_blank">
+                    <i class="fas fa-laptop-code icon"></i>View Image Collection Process
+                </a>
+            </li>
+            </ul>
         </section>
 
         <!-- Data Cleaning & Augmentation Section -->
@@ -151,26 +158,28 @@
             <!-- Final Model Scores Section -->
                 <h3>Final Model Scores</h3>
                 <p>The last epoch of our model training achieved the following scores, showcasing its accuracy and precision in identifying the mammal species and their behavior:</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Train Loss</th>
-                            <th>Valid Loss</th>
-                            <th>Accuracy Multi</th>
-                            <th>F1 Score</th>
-                            <th>Precision Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>0.020471</td>
-                            <td>0.024824</td>
-                            <td>0.990407</td>
-                            <td>0.735815</td>
-                            <td>0.843947</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Train Loss</th>
+                                <th>Valid Loss</th>
+                                <th>Accuracy Multi</th>
+                                <th>F1 Score</th>
+                                <th>Precision Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0.020471</td>
+                                <td>0.024824</td>
+                                <td>0.990407</td>
+                                <td>0.735815</td>
+                                <td>0.843947</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </section>
 
         <!-- Deployment Section -->

@@ -285,6 +285,21 @@ section ul li a:hover {
     color: #ffffff; /* Change link color on hover (adjust as needed) */
 }
 
+/* CSS for Links within <p> tags in the "Projects" section */
+section p a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-decoration: none; /* Remove underlines from links */
+    color: #007BFF !important; /* Set the link color to a blue shade (adjust as needed) */
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+section p a:hover {
+    color: #0056b3 !important; /* Change link color on hover (adjust as needed) */
+}
+
+
 /* CSS for the video container */
 /* CSS for the video container */
 .video-container {
@@ -402,9 +417,13 @@ footer {
 
 
 /* tables */
-
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
 table {
     width: 100%;
+    max-width: 100%; /* Prevent any overflow on the table itself */
+    margin-bottom: 1rem;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -413,6 +432,7 @@ table, th, td {
     border: 1px solid #ddd;
     text-align: left;
     padding: 8px;
+    white-space: nowrap; /* Prevents cells from wrapping content to the next line */
 }
 
 th {
