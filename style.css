@@ -194,6 +194,27 @@ section + section {
     margin-right: 0;
 }
 
+/* Employments */
+
+.experience-entry {
+    background-color: #f9f9f9; /* Subtle background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+.experience-entry p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.employment-type {
+    font-size: 0.8em; /* Smaller font size */
+    color: #555; /* Slightly subdued color */
+    font-style: italic;
+}
+
 .projects {
     background-color: #f9f9f9; /* Subtle background color for projects */
     padding: 20px;
