@@ -209,6 +209,19 @@ section + section {
     padding: 2px 0;
 }
 
+.experience-entry a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+    text-decoration: none; /* Remove underlines from links */
+    color: #007BFF !important; /* Set the link color to a blue shade (adjust as needed) */
+    font-weight: bold;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.experience-entry a:hover {
+    color: #0056b3 !important; /* Change link color on hover (adjust as needed) */
+}
+
 .employment-type {
     font-size: 0.8em; /* Smaller font size */
     color: #555; /* Slightly subdued color */
