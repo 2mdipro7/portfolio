@@ -214,7 +214,6 @@ section + section {
     font-size: smaller;
     text-decoration: none; /* Remove underlines from links */
     color: #007BFF !important; /* Set the link color to a blue shade (adjust as needed) */
-    font-weight: bold;
     transition: color 0.3s; /* Add a smooth color transition on hover */
 }
 
