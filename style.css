@@ -32,6 +32,12 @@ body {
     left: 10%; /* moved a bit more to the right */
 }
 
+#clock {
+    font-family: Arial, sans-serif;
+    color: #02a9f7;
+    font-size: 24px;
+}
+
 /* CSS for Header */
 header {
     font-family: Arial, Helvetica, sans-serif;
