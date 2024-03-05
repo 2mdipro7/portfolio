@@ -13,7 +13,7 @@ function updateClock() {
     const timeString = `${currentLocalTime}:${minutes}:${seconds}`;
 
     // Display the time string and the message to the user
-    document.getElementById('clock').innerText = `Current time: ${timeString}`;
+    document.getElementById('clock').innerText = `My Current Time: ${timeString}`;
 }
 
 // Initialize the clock

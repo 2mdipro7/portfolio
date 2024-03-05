@@ -34,8 +34,8 @@ body {
 
 #clock {
     font-family: Arial, sans-serif;
-    color: #02a9f7;
-    font-size: 24px;
+    font-size: 20px;
+    transition: color 0.05s;
 }
 
 /* CSS for Header */
